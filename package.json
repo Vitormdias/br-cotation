@@ -1,0 +1,31 @@
+{
+  "name": "br-cotation",
+  "version": "1.0.0",
+  "description": "JS Lib to Convert International Currency to Brazilian Real Edit",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitormdias/br-cotation.git"
+  },
+  "keywords": [
+    "Real",
+    "Cotation",
+    "Convert"
+  ],
+  "author": "Vitor Manfre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vitormdias/br-cotation/issues"
+  },
+  "homepage": "https://github.com/Vitormdias/br-cotation#readme",
+  "dependencies": {
+    "node-rest-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
