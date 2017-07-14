@@ -4,7 +4,8 @@
   "description": "JS Lib to Convert International Currency to Brazilian Real Edit",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha test/test.js"
+    "start": "node src/index.js",
+    "test": "mocha src/test.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   },
   "homepage": "https://github.com/Vitormdias/br-cotation#readme",
   "dependencies": {
-    "node-rest-client": "^3.1.0"
+    "node-fetch": "^1.7.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
