@@ -1,17 +1,32 @@
-const Client = require('node-rest-client').Client;
+const fetch = require('node-fetch');
 
-const client = new Client();
-let myCotation
+async function cotation(currency) {
+    const response = await fetch('http://api.promasters.net.br/cotacao/v1/valores');
+    const json = await response.json();
 
-let cotation = (currency, cb) => {
-  client.get("http://api.promasters.net.br/cotacao/v1/valores", function (data, response) {
-    cotations = data
-    cb(cotations["valores"][currency]["valor"])
-  })
-
-  return myCotation
+    return json.valores[currency].valor;
 }
 
-console.log(cotation("USD", function(v) {
-  myCotation = v
-}))
+const dolar = async () => {
+    return await cotation('USD');
+};
+const euro = async () => {
+    return await cotation('EUR');
+};
+const peso = async () => {
+    return await cotation('ARS');
+};
+const libra = async () => {
+    return await cotation('GBP');
+};
+const bitcoin = async () => {
+    return await cotation('BTC');
+};
+
+module.exports = {
+    dolar,
+    euro,
+    peso,
+    libra,
+    bitcoin
+};
