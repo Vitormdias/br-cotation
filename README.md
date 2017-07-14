@@ -1,4 +1,7 @@
 # br-cotation
+
+[![Build Status](https://travis-ci.org/Vitormdias/br-cotation.svg?branch=master)](https://travis-ci.org/Vitormdias/br-cotation)
+
 JS Lib to Convert International Currency to Brazilian Real
 
 ## Installation
