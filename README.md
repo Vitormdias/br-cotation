@@ -31,7 +31,7 @@ JS Lib to Convert International Currency to Brazilian Real
 
 ## Contributing
 
-Feel welcome to fork and contribute
+Feel welcome to fork and contribute.
 
 ## Release History
 
